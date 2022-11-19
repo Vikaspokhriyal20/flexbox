@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
+    <title>website with flexbox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body
+        {
+            font-family:'IBM Plex Sans';
+           
+           
+        }
+
+        .flex-container {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            /* border: 1px solid grey; */
+            justify-content: space-around;
+            
+        }
+
+        .flex-child-1 {
+            border: 0.5px solid lightgray;
+            text-align: center;
+            border-radius: 4px;
+            flex: 25%;
+            margin: 25px;
+            padding: 18px;
+            line-height:24px;
+            font-size: 16px;
+        }
+
+        .flex-child-2 {
+            border: 0.5px solid lightgray;
+            text-align: center;
+            border-radius: 4px;
+            flex: 25%;
+            margin: 25px;
+            padding: 18px;
+            line-height:24px;
+            font-size: 16px;
+        }
+
+        .flex-child-3 {
+            border: 0.5px solid lightgray;
+            text-align: center;
+            border-radius: 4px;
+            flex: 25%;
+            margin: 25px;
+            padding: 18px;
+            line-height:24px;
+            font-size: 16px;
+           
+        }
+
+        .flex-child-4 {
+            border: 0.5px solid lightgray;
+            text-align: center;
+            border-radius: 4px;
+            flex: 25%;
+            margin: 25px;
+            padding: 18px;
+            font-size: 16px;
+            line-height:24px;
+           
+            
+        }
+
+        p
+        {
+            filter: drop-shadow(2px 2px 2px grey);
+        }
+
+        @media screen and (max-width: 700px) {
+            .flex-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-child-1">
+            <img src="codetest.svg" alt="hello svg" style="width:100px; height: 100px;">
+          <p>Coding Test</p>
+        </div>
+        <div class="flex-child-2">
+            <img src="data.svg" alt="hello svg" style="width:100px; height: 100px;">
+            <p>Database</p>
+        </div>
+        <div class="flex-child-3">
+            <img src="team.svg" alt="hello svg" style="width:100px; height: 100px;">
+            <p>Team-Work</p>
+        </div>
+        <div class="flex-child-4">
+            <img src="html.svg" alt="hello svg" style="width:100px; height: 100px;">
+           <p>Web Development</p>
+        </div>
+        
+    </div>
+</body>
+
+</html>
